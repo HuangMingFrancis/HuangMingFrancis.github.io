@@ -79,13 +79,19 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Self-regulation">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="什么是复杂度分析 数据结构和算法本身解决的是“快”和“省”的问题，即如何让代码运行更快和如何让代码更省空间。   对应的就是时间复杂度和空间复杂度两个概念。   这里的复杂度是渐进式复杂度，分析的是算法执行效率与数据规模之间的增长关系。  为什么要进行复杂度分析 它是开发和选择算法的一个重要依据。   和性能测试相比，复杂度分析有不依赖执行环境、成本低、效率高、易操作、指导性强的特点。 掌握复杂度">
+<meta property="og:type" content="article">
+<meta property="og:title" content="时间复杂度分析">
+<meta property="og:url" content="http://yoursite.com/2018/11/12/时间复杂度分析/index.html">
 <meta property="og:site_name" content="Self-regulation">
+<meta property="og:description" content="什么是复杂度分析 数据结构和算法本身解决的是“快”和“省”的问题，即如何让代码运行更快和如何让代码更省空间。   对应的就是时间复杂度和空间复杂度两个概念。   这里的复杂度是渐进式复杂度，分析的是算法执行效率与数据规模之间的增长关系。  为什么要进行复杂度分析 它是开发和选择算法的一个重要依据。   和性能测试相比，复杂度分析有不依赖执行环境、成本低、效率高、易操作、指导性强的特点。 掌握复杂度">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://raw.githubusercontent.com/HuangMingFrancis/ImgRes/master/blog/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/1.jpg">
+<meta property="og:updated_time" content="2018-11-13T14:48:04.333Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Self-regulation">
+<meta name="twitter:title" content="时间复杂度分析">
+<meta name="twitter:description" content="什么是复杂度分析 数据结构和算法本身解决的是“快”和“省”的问题，即如何让代码运行更快和如何让代码更省空间。   对应的就是时间复杂度和空间复杂度两个概念。   这里的复杂度是渐进式复杂度，分析的是算法执行效率与数据规模之间的增长关系。  为什么要进行复杂度分析 它是开发和选择算法的一个重要依据。   和性能测试相比，复杂度分析有不依赖执行环境、成本低、效率高、易操作、指导性强的特点。 掌握复杂度">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/HuangMingFrancis/ImgRes/master/blog/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/1.jpg">
 
 
 
@@ -115,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/12/时间复杂度分析/">
 
 
 
 
 
-  <title>Self-regulation</title>
+  <title>时间复杂度分析 | Self-regulation</title>
   
 
 
@@ -140,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,9 +219,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/12/时间复杂度分析/" itemprop="url">时间复杂度分析</a></h1>
+          <h1 class="post-title" itemprop="name headline">时间复杂度分析</h1>
         
 
         <div class="post-meta">
@@ -298,9 +301,7 @@
       
 
       
-        
-          
-            <h2 id="什么是复杂度分析"><a href="#什么是复杂度分析" class="headerlink" title="什么是复杂度分析"></a>什么是复杂度分析</h2><ul>
+        <h2 id="什么是复杂度分析"><a href="#什么是复杂度分析" class="headerlink" title="什么是复杂度分析"></a>什么是复杂度分析</h2><ul>
 <li>数据结构和算法本身解决的是“快”和“省”的问题，即如何让代码运行更快和如何让代码更省空间。  </li>
 <li>对应的就是时间复杂度和空间复杂度两个概念。  </li>
 <li>这里的复杂度是渐进式复杂度，分析的是算法执行效率与数据规模之间的增长关系。</li>
@@ -326,8 +327,6 @@
 </ul>
 <h2 id="如何掌握好复杂度分析方法？"><a href="#如何掌握好复杂度分析方法？" class="headerlink" title="如何掌握好复杂度分析方法？"></a>如何掌握好复杂度分析方法？</h2><p>复杂度分析关键在于多练，所谓孰能生巧。</p>
 
-          
-        
       
     </div>
     
@@ -344,140 +343,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/12/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Francis">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Self-regulation">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/12/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-12T17:30:16+08:00">
-                2018-11-12
-              </time>
+              <a href="/2018/11/12/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -487,10 +374,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -498,6 +386,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -518,8 +410,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -561,6 +462,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是复杂度分析"><span class="nav-number">1.</span> <span class="nav-text">什么是复杂度分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要进行复杂度分析"><span class="nav-number">2.</span> <span class="nav-text">为什么要进行复杂度分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何进行复杂度分析"><span class="nav-number">3.</span> <span class="nav-text">如何进行复杂度分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大O表示法"><span class="nav-number">3.1.</span> <span class="nav-text">大O表示法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度分析法则"><span class="nav-number">3.2.</span> <span class="nav-text">复杂度分析法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用的复杂度级别？"><span class="nav-number">4.</span> <span class="nav-text">常用的复杂度级别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何掌握好复杂度分析方法？"><span class="nav-number">5.</span> <span class="nav-text">如何掌握好复杂度分析方法？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -694,6 +611,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
